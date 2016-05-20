@@ -1,3 +1,7 @@
+body{
+		background-color:black;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,7 +23,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: cyan;
+    background-color: gray;
 }
 
 li.dropdown {
