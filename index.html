@@ -1,166 +1,173 @@
 <!DOCTYPE html>
 <html>
  <head>
+ 
   <meta charset=UTF-8">	  
   <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>		
+  <link rel="stylesheet" type="text/css" href="style.css"/>		 
  </head>
-<body>
+ 
+<body onload="startTime()">
 	
-	<!--<div class="dropdown">
-	<button class="dropbtn">Lurk</button>
-	<div class="dropdown-content">
-	<a  target="_blank" href="https://www.8ch.net/a/">/a/</a> 
-	<a  target="_blank" href="https://www.8ch.net/b/">/b/</a>
-	<a  target="_blank" href="https://www.8ch.net/tech/">/tech/</a> 
-	<a  target="_blank" href="https://www.8ch.net/prog/">/prog/</a>
-	<a  target="_blank" href="http://2ch.net/">2ch</a> 
-	<a  target="_blank" href="http://www.pixiv.net/mypage.php">pixiv</a>
-	</div>
-	</div>
-
-	<div class="dropdown">
-	<button class="dropbtn">Tech</button>
-	<div class="dropdown-content">
-	<a class="btn" target="_blank" href="https://www.stackoverflow.com">stackoverflow</a> 
-	<a class="btn" target="_blank" href="https://www.github.com">GitHub</a>
-	</div>
-	</div>
+	<div id="clock"></div>
+	<button id="stop" onclick="conf()">Do not click</button>
+	<img id="h" src="img/w2.jpg">
 	
-	<div class="dropdown">
-	<button class="dropbtn">File Hosting</button>
-	<div class="dropdown-content">
-	<a class="btn" target="_blank" href="http://www.pastebin.com" >pasteBin</a> 
-	<a class="btn" target="_blank" href="https://www.gfycat.com">gfycat</a>
-	<a class="btn" target="_blank" href="https://uguu.se">uguu</a>
-	</div>
-	</div>
-	
-	<div class="dropdown">
-	<button class="dropbtn">Language</button>
-	<div class="dropdown-content">		
-	<a class="btn" target="_blank" href="http://www.memrise.com/home/">memrise</a> 
-	<a class="btn" target="_blank" href="http://www.duolingo.com">duolingo</a>
-	<a class="btn" target="_blank" href="https://translate.google.com">Google Translate</a>	
-	</div>
-	</div>
-	
-	<div class="dropdown">
-	<button class="dropbtn">Music</button>
-	<div class="dropdown-content">
-	<a class="btn" target="_blank" href="http://www.ultimate-guitar.com">Ultimate Guitar</a>
-	<a class="btn" target="_blank" href="http://www.last.fm">LastFM</a>
-	<a class="btn" target="_blank" href="http://www.soundcloud.com">SoundCloud</a>
-	<a class="btn" target="_blank" href="http://www.guitarmessenger.com/">Guitar Messenger</a>
-	<a class="btn" target="_blank" href="http://www.bandcamp.com">Bandcamp</a>
-	</div>
-	</div>
-
-	<div class="dropdown">
-	<button class="dropbtn">Math</button>
-	<div class="dropdown-content">	
-	<a class="btn"target="_blank"href="http://www.khanacademy.org">Khan Academy</a>
-	</div>
-	</div>
-	
-	<div class="dropdown">
-	<button class="dropbtn">Other</button>
-	<div class="dropdown-content">	
-	<a class="btn"target="_blank"href="http://www.academia.edu">Academia</a>
-	<a class="btn" target="_blank" href="https://www.forbes.com">Forbes</a>
-	<a class="btn" target="_blank" href="http://www.myanimelist.net">MyAnimeList</a>
-	<a class="btn" target="_blank" href="http://www.wellsfargo.com">Wells Fargo</a>
-	<a class="btn" target="_blank" href="http://paws.gsu.edu">Paws</a>
-	<a class="btn" target="_blank" href="https://gsu.view.usg.edu/d2l/home">D2L</a>
-	<a class="btn" target="_blank" href="http://www.all-guitar-chords.com/chord_name.php">All Guitar Chords</a>	
-	</div>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br> -->
+<!---->	
 <ul>
 
 <li class="dropdown">
- <a class="dropbtn"href="#">Lurk</a>
+ <a class="dropbtn">Lurk</a>
   <div class="dropdown-content">
-    <a  target="_blank" href="https://www.8ch.net/a/">/a/</a> 
-	<a  target="_blank" href="https://www.8ch.net/b/">/b/</a>
-	<a  target="_blank" href="https://www.8ch.net/tech/">/tech/</a> 
-	<a  target="_blank" href="https://www.8ch.net/prog/">/prog/</a>
-	<a  target="_blank" href="http://2ch.net/">2ch</a> 
-	<a  target="_blank" href="http://www.pixiv.net/mypage.php">pixiv</a>
+		<a  target="_blank" href="https://www.8ch.net/a/">/a/</a> <a  target="_blank" href="https://www.8ch.net/b/">/b/</a>
+		<a  target="_blank" href="https://www.8ch.net/tech/">/tech/</a> 
+		<a  target="_blank" href="https://www.8ch.net/prog/">/prog/</a>
+		<a  target="_blank" href="http://2ch.net/">2ch</a> 
+		<a  target="_blank" href="http://www.pixiv.net/mypage.php">pixiv</a>
  </div>
 </li>
  
 <li class="dropdown">
 	<a class="dropbtn">Tech</a>
 	<div class="dropdown-content">
-	<a  target="_blank" href="https://www.stackoverflow.com">stackoverflow</a> 
-	<a  target="_blank" href="https://www.github.com">GitHub</a>
+		<a  target="_blank" href="https://www.stackoverflow.com">stackoverflow</a> 
+		<a  target="_blank" href="https://www.github.com">GitHub</a>
 	</div>	
-	</li>
+</li>
 	
 <li class="dropdown">
 	<a class="dropbtn">File Hosting</a>
 	<div class="dropdown-content">
-	<a target="_blank" href="http://www.pastebin.com" >pasteBin</a> 
-	<a target="_blank" href="https://www.gfycat.com">gfycat</a>
-	<a target="_blank" href="https://uguu.se">uguu</a>
+		<a target="_blank" href="http://www.pastebin.com" >pasteBin</a> 
+		<a target="_blank" href="https://www.gfycat.com">gfycat</a>
+		<a target="_blank" href="https://uguu.se">uguu</a>
 	</div>	
+</li>
 	
-	<li class="dropdown">
+<li class="dropdown">
 	<a class="dropbtn">Language</a>
 	<div class="dropdown-content">		
-	<a class="btn" target="_blank" href="http://www.memrise.com/home/">memrise</a> 
-	<a class="btn" target="_blank" href="http://www.duolingo.com">duolingo</a>
-	<a class="btn" target="_blank" href="https://translate.google.com">Google Translate</a>	
+		<a class="btn" target="_blank" href="http://www.memrise.com/home/">memrise</a> 
+		<a class="btn" target="_blank" href="http://www.duolingo.com">duolingo</a>
+		<a class="btn" target="_blank" href="https://translate.google.com">Google Translate</a>	
 	</div>
+</li>
 	
 	
-	<li class="dropdown">
+<li class="dropdown">
 	<a class="dropbtn">Music</a>
 	<div class="dropdown-content">
-	<a class="btn" target="_blank" href="http://www.ultimate-guitar.com">Ultimate Guitar</a>
-	<a class="btn" target="_blank" href="http://www.last.fm">LastFM</a>
-	<a class="btn" target="_blank" href="http://www.soundcloud.com">SoundCloud</a>
-	<a class="btn" target="_blank" href="http://www.guitarmessenger.com/">Guitar Messenger</a>
-	<a class="btn" target="_blank" href="http://www.bandcamp.com">Bandcamp</a>
+		<a class="btn" target="_blank" href="http://www.ultimate-guitar.com">Ultimate Guitar</a>
+		<a class="btn" target="_blank" href="http://www.last.fm">LastFM</a>
+		<a class="btn" target="_blank" href="http://www.soundcloud.com">SoundCloud</a>
+		<a class="btn" target="_blank" href="http://www.guitarmessenger.com/">Guitar Messenger</a>
+		<a class="btn" target="_blank" href="http://www.bandcamp.com">Bandcamp</a>
 	</div>
+</li>
 	
 
-	<li class="dropdown">
+<li class="dropdown">
 	<a class="dropbtn">Math</a>
 	<div class="dropdown-content">	
-	<a class="btn"target="_blank"href="http://www.khanacademy.org">Khan Academy</a>
+		<a class="btn"target="_blank"href="http://www.khanacademy.org">Khan Academy</a>
 	</div>
+</li>
 		
 	
 <li class="dropdown">
 	<a class="dropbtn">Other</a>
 	<div class="dropdown-content">	
-	<a class="btn"target="_blank"href="http://www.academia.edu">Academia</a>
-	<a class="btn" target="_blank" href="https://www.forbes.com">Forbes</a>
-	<a class="btn" target="_blank" href="http://www.myanimelist.net">MyAnimeList</a>
-	<a class="btn" target="_blank" href="http://www.wellsfargo.com">Wells Fargo</a>
-	<a class="btn" target="_blank" href="http://paws.gsu.edu">Paws</a>
-	<a class="btn" target="_blank" href="https://gsu.view.usg.edu/d2l/home">D2L</a>
-	<a class="btn" target="_blank" href="http://www.all-guitar-chords.com/chord_name.php">All Guitar Chords</a>
-	<a class="btn" target="_blank" href="http://w3schools.com">W3Schools</a>
-	
-	
+		<a class="btn"target="_blank"href="http://www.academia.edu">Academia</a>
+		<a class="btn" target="_blank" href="https://www.forbes.com">Forbes</a>
+		<a class="btn" target="_blank" href="http://www.myanimelist.net">MyAnimeList</a>
+		<a class="btn" target="_blank" href="http://www.wellsfargo.com">Wells Fargo</a>
+		<a class="btn" target="_blank" href="http://paws.gsu.edu">Paws</a>
+		<a class="btn" target="_blank" href="https://gsu.view.usg.edu/d2l/home">D2L</a>
+		<a class="btn" target="_blank" href="http://www.all-guitar-chords.com/chord_name.php">All Guitar Chords</a>
+		<a class="btn" target="_blank" href="http://w3schools.com">W3Schools</a>	
 	</div>	
 </li>
 
 </ul>	
-	
-	
-	
-	
 
+		<section class="about visible">
+		  <pre>
+How can you see into my eyes like open doors?
+Leading you down into my core where I've become so numb
+Without a soul my spirit's sleeping somewhere cold
+Until you find it there and lead it back home
+
+(Wake me up)
+Wake me up inside
+(I can't wake up)
+Wake me up inside
+(Save me)
+Call my name and save me from the dark
+(Wake me up)
+Bid my blood to run
+(I can't wake up)
+Before I come undone
+(Save me)
+Save me from the nothing I've become
+
+Now that I know what I'm without
+You can't just leave me
+Breathe into me and make me real
+Bring me to life
+
+(Wake me up)
+Wake me up inside
+(I can't wake up)
+Wake me up inside
+(Save me)
+Call my name and save me from the dark
+(Wake me up)
+Bid my blood to run
+(I can't wake up)
+Before I come undone
+(Save me)
+Save me from the nothing I've become
+
+Bring me to life
+(I've been living a lie, there's nothing inside)
+Bring me to life
+
+Frozen inside without your touch
+Without your love, darling
+Only you are the life among the dead
+
+All this time I can't believe I couldn't see
+Kept in the dark but you were there in front of me
+I've been sleeping a thousand years it seems
+Got to open my eyes to everything
+Without a thought, without a voice, without a soul
+Don't let me die here
+There must be something more
+Bring me to life
+
+(Wake me up)
+Wake me up inside
+(I can't wake up)
+Wake me up inside
+(Save me)
+Call my name and save me from the dark
+(Wake me up)
+Bid my blood to run
+(I can't wake up)
+Before I come undone
+(Save me)
+Save me from the nothing I've become
+
+Bring me to life
+(I've been living a lie, there's nothing inside)
+Bring me to life 
+</pre>
+</section>
+	
+	
+	
+	
+	
+<script src="s1.js"></script>	
 </body>
 </html>
